@@ -30,6 +30,7 @@ function draw(){
 
         case 1:
             sc.paintButtonsScreen2();
+            create.paintArray();
             break;
     }
 
@@ -39,14 +40,24 @@ function draw(){
 
 
 function mouseClicked(){
-    sc.add();
-    sc.subtract();
-    if(sc.getNum() <=10 && sc.getNum() >0 && mouseX > 249 && mouseX< 550 && mouseY > 466 && mouseY < 535){
-        screen=1;
+    switch(screen){
+        case 0:
+            sc.add();
+            sc.subtract();
+
+         if(sc.getNum() <=10 && sc.getNum() >0 && mouseX > 249 && mouseX< 550 && mouseY > 466 && mouseY < 535){
+            screen=1;
+            create.createArray();
        
     }
-      
-     
-    console.log('sirve');
+            break;
+
+        case 1:
+            
+            
+            break;
+    }
+    
+    
 
 }

@@ -28,7 +28,7 @@ class CreateFigure{
                 this.figures.splice(-1,1);
             }
           
-            console.log("itsWorking");
+            
         }
     }
 

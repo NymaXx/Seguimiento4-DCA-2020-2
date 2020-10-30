@@ -10,10 +10,10 @@ class Circle extends Figure{
     }
 
     move(){
-        //super(Figure.move);
+        super.move();
     }
 
     duplicateTam(){
-        //super(Figure.duplicateTam);
+        super.duplicateTam();
     }
 }

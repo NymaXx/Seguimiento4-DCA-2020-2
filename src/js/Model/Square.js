@@ -15,6 +15,6 @@ class Square extends Figure{
     }
 
     duplicateTam(){
-       //super(Figure.duplicateTam);
+       super.duplicateTam();
     }
 }
