@@ -32,6 +32,7 @@ function draw(){
         case 1:
             sc.paintButtonsScreen2();
             create.paintArray();
+            create.toNewArray();
            
             break;
     }
@@ -58,9 +59,20 @@ function mouseClicked(){
         case 1:
             sc.addInTwo();
             sc.subtractInTwo();
-            //create.toNewArray();
+            
             console.log(sc.getNum());
             create.duplicate();
+
+            /*si se USA este metodo aqui, se crean nuevos arreglos con mas o menos elementos segun lo indicado
+            por los botones, tambien se ordenan (ver console log) sin embargo no es el mismo arreglo anadiendo
+            y quitando elementos, se crean nuevos arreglos
+            |
+            |
+            V    */
+           // create.createArray(); 
+           
+            
+            
             
             break;
     }
