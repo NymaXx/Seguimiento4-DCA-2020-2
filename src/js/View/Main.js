@@ -58,7 +58,7 @@ function mouseClicked(){
             sc.subtractInTwo();
             //create.toNewArray();
             console.log(sc.getNum());
-           
+            create.duplicate();
             
             break;
     }

@@ -37,12 +37,20 @@ paintButtonsScreen1(){
 paintButtonsScreen2(){
     fill(100);
     rect(0, 550, width/4, 70);
+    fill(0);
+    text("Anadir", 20, 600);
     fill(255,100,100);
     rect(width/4, 550, width/4,70);
+    fill(0);
+    text("Quitar", 220, 600);
     fill(100,255,100);
     rect(width*2/4, 550, width/4,70);
+    fill(0);
+    text("DuplicarTam", 410, 600);
     fill(100,100,255);
     rect(width*3/4, 550, width/4,70);
+    fill(0);
+    text("CrearCirculos", 610, 600);
 }
 
 addInOne(){
