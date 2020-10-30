@@ -7,7 +7,7 @@ class Square extends Figure{
 
 
     paint(){
-        fill(255);
+        fill(this.value *35);
         rect(this.posX,this.posY, this.tam, this.tam);
         fill(0);
         textSize(30);

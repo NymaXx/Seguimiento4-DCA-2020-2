@@ -5,8 +5,11 @@ class Circle extends Figure{
 
 
     paint(){
-        fill(255);
+        fill(this.value*35);
         ellipse(this.posX,this.posY,this.tam, this.tam);
+        fill(0);
+        textSize(30);
+        text(this.value, this.posX+10, this.posY+30);
     }
 
     move(){
