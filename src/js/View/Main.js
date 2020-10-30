@@ -1,15 +1,47 @@
 
 
+let screen=0;
+let sc;
 
 function setup(){
-    createCanvas(640, 360); 
+    createCanvas(800, 620); 
+    sc = new Screen(0);
 }
 
 function draw(){
     background(0);
-ellipse(50,50,50,50);
-}
+  
+   
+     
+     
+     
+    switch(screen){
+        case 0:
+            sc.paintButtonsScreen1();
+            sc.paintNum();
+            fill(255);
+            textSize(32);
+            text('X' + mouseX + 'Y' + mouseY, mouseX, mouseY);
 
-function mouseIsPressed(){
+            break;
+
+        case 1:
+            sc.paintButtonsScreen2();
+            break;
+    }
+
+}    
+
+
+
+
+function mouseClicked(){
+    
+
+    sc.add();
+    sc.subtract();
+    
+    
+    console.log('sirve');
 
 }
