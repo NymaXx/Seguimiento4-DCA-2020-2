@@ -18,7 +18,7 @@ class CreateFigure{
     }
 }
 
-    toNewArray(){ //para anadir y eliminar eleentos del ARRAY
+    toNewArray(){ //para anadir y eliminar elementos del ARRAY
         for(let i=0; i < this.figures.length; i++){
            
             if(sc.getIsAdd()==true){
@@ -61,7 +61,7 @@ class CreateFigure{
 }
 
 
-    createCircles(){
+    createCircles(){ //intento de creacion de circulos mediante los datos del arreglo de cuadrados
 
         
             for(let i=0; i < this.figures.length; i++){
@@ -90,7 +90,7 @@ class CreateFigure{
 
 
 
-//No pude duplicar el tamano de los objetos utilizando un for Each, intento abajo
+//No pude duplicar el tamano de los objetos utilizando un for Each. Se usO un for normal
     duplicate(){  
         for(let i=0; i < this.figures.length; i++){
         if(mouseX > 400 && mouseX <600 && mouseY > 550 && mouseY < 620){

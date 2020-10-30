@@ -6,7 +6,8 @@ class Square extends Figure{
     }
 
 
-    paint(){
+    paint(){ //para evidenciar mejor el ordenamiento, se cambio la variable FILL para que tomara los valores en 
+        //value, de esta manera entre mayor es el VALUE, mas clara es la figura y se podra apreciar mejor al ordenar
         fill(this.value *35);
         rect(this.posX,this.posY, this.tam, this.tam);
         fill(0);
