@@ -3,12 +3,14 @@
 let screen;
 let sc;
 let create;
+let paintcir;
 
 function setup(){
     createCanvas(800, 620); 
     sc = new Screen(0);
     create= new CreateFigure();
     screen=0;
+    paintcir=false;
     
 }
 
@@ -33,6 +35,9 @@ function draw(){
             sc.paintButtonsScreen2();
             create.paintArray();
             create.toNewArray();
+            if(paintcir===true){
+            create.paintCircles();
+            }
            
             break;
     }
@@ -51,6 +56,8 @@ function mouseClicked(){
          if(sc.getNum() <=10 && sc.getNum() >0 && mouseX > 249 && mouseX< 550 && mouseY > 466 && mouseY < 535){
             screen=1;
             create.createArray();
+            create.createCircles();
+           
             
        
     }
@@ -62,6 +69,11 @@ function mouseClicked(){
             
             console.log(sc.getNum());
             create.duplicate();
+            
+            
+            if(sc.createCircles()){
+                paintcir=true;
+            }
 
             /*si se USA este metodo aqui, se crean nuevos arreglos con mas o menos elementos segun lo indicado
             por los botones, tambien se ordenan (ver console log) sin embargo no es el mismo arreglo anadiendo

@@ -46,6 +46,10 @@ getValue(){
 return this.value;
 }
 
+getVel(){
+    return this.vel;
+}
+
 setValue(value){
     this.value=value;
 }
