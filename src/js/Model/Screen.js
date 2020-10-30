@@ -45,20 +45,44 @@ paintButtonsScreen2(){
     rect(width*3/4, 550, width/4,70);
 }
 
-add(){
+addInOne(){
     if(this.num<10 && this.num >=0 && mouseX > 20 && mouseX< 219 && mouseY > 274 && mouseY < 345){
         this.num= this.num+=1;  
-        this.isAdd=true;
+        
     }
 }
 
-subtract(){
+subtractInOne(){
     if(this.num <=10 && this.num >0 && mouseX > 579 && mouseX< 779 && mouseY > 274 && mouseY < 345){
         this.num= this.num-=1;  
-        this.isSubtract=true;
+        
     }
 
 }
+
+addInTwo(){
+    if(this.num<10 && this.num >=0 && mouseX > 0 && mouseX< width/4 && mouseY > 550 && mouseY < 620){
+        this.num= this.num+=1;  
+        if(mouseIsPressed){
+            this.isAdd=true;
+        }else{
+            this.IsAdd=false;
+        }
+    }
+}
+
+subtractInTwo(){
+    if(this.num <=10 && this.num >0 && mouseX > width/4 && mouseX< 400 && mouseY > 550 && mouseY < 620){
+        this.num= this.num-=1;  
+        if(mouseIsPressed){
+            this.isSubtract=true;
+        }else{
+            this.isSubtract=false;
+        }
+    }
+
+}
+
 
 
 

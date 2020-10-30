@@ -42,18 +42,23 @@ function draw(){
 function mouseClicked(){
     switch(screen){
         case 0:
-            sc.add();
-            sc.subtract();
+            sc.addInOne();
+            sc.subtractInOne();
 
          if(sc.getNum() <=10 && sc.getNum() >0 && mouseX > 249 && mouseX< 550 && mouseY > 466 && mouseY < 535){
             screen=1;
             create.createArray();
+            
        
     }
             break;
 
         case 1:
-            
+            sc.addInTwo();
+            sc.subtractInTwo();
+            //create.toNewArray();
+            console.log(sc.getNum());
+           
             
             break;
     }
