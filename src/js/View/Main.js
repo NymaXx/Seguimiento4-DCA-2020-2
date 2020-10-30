@@ -9,6 +9,7 @@ function setup(){
     sc = new Screen(0);
     create= new CreateFigure();
     screen=0;
+    
 }
 
 function draw(){
@@ -31,6 +32,7 @@ function draw(){
         case 1:
             sc.paintButtonsScreen2();
             create.paintArray();
+           
             break;
     }
 
@@ -65,4 +67,10 @@ function mouseClicked(){
     
     
 
+}
+
+function keyPressed(){
+    if(keyCode===78){
+        create.sortByValue();
+     }
 }
