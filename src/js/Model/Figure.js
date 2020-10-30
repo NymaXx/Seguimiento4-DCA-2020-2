@@ -15,11 +15,11 @@ class Figure{
 
 
 paint(){
-
+    
 }
 
 move(){
-this.posX= this.posX+=this.vel;
+this.posX= (this.posX+=this.vel);
 }
 
 duplicateTam(){

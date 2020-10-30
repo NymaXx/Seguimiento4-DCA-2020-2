@@ -10,7 +10,7 @@ class Square extends Figure{
     }
 
     move(){
-        //super(Figure.move);
+    super.move();
     
     }
 
