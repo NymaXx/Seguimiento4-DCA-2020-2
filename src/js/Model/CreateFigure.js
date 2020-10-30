@@ -92,22 +92,21 @@ class CreateFigure{
 
 //No pude duplicar el tamano de los objetos utilizando un for Each. Se usO un for normal
     duplicate(){  
-        for(let i=0; i < this.figures.length; i++){
+        
         if(mouseX > 400 && mouseX <600 && mouseY > 550 && mouseY < 620){
-            this.figures[i].duplicateTam();
+            this.figures.forEach(element => {
+                element.duplicateTam();
+                //console.log(element.tam);
+            })
         }
-    }
     
- //   this.figures.forEach(this.toForEach); //INTENTO DE FOR EACH
+    
+    //this.figures.forEach(this.toForEach); //INTENTO DE FOR EACH
+ 
 
-   
 }
 
-toForEach(item){
-     item = this.figures[this].getTam();
-        item*=2;
-        console.log(item);
-}
+
 
 
 
