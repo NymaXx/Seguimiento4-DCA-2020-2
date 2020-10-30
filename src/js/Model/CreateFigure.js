@@ -9,7 +9,7 @@ class CreateFigure{
 
     createArray(){
         for(let i=0; i < sc.getNum(); i++){
-            this.figures.push(new Square(30,random(1,10), 30*i+30, random(45,300), 5));
+            this.figures.push(new Square(40,Math.floor(random(1,10)), 30*i+30, Math.floor(random(45,150)), 5));
         }
           
     }
